@@ -10,15 +10,7 @@
 <p>&nbsp;</p>
 <hr contenteditable="false" data-ke-type="horizontalRule" data-ke-style="style7" />
 
-
-<hr contenteditable="false" data-ke-type="horizontalRule" data-ke-style="style7" />
-<p><a href="https://tristy.tistory.com/manage/newpost/4?type=post&amp;returnURL=https%3A%2F%2Ftristy.tistory.com%2F4" target="_blank" rel="noopener">https://tristy.tistory.com/manage/newpost/4?type=post&amp;returnURL=https%3A%2F%2Ftristy.tistory.com%2F4</a></p>
-<figure id="og_1616051456848" contenteditable="false" data-ke-type="opengraph" data-og-type="website" data-og-title="https://tristy.tistory.com/manage/newpost/4?type=post&amp;returnURL=https%3A%2F%2Ftristy.tistory.com%2F4" data-og-description="" data-og-host="tristy.tistory.com" data-og-source-url="https://tristy.tistory.com/manage/newpost/4?type=post&amp;returnURL=https%3A%2F%2Ftristy.tistory.com%2F4" data-og-url="https://tristy.tistory.com/manage/newpost/4?type=post&amp;returnURL=https%3A%2F%2Ftristy.tistory.com%2F4" data-og-image=""><a href="https://tristy.tistory.com/manage/newpost/4?type=post&amp;returnURL=https%3A%2F%2Ftristy.tistory.com%2F4" target="_blank" rel="noopener" data-source-url="https://tristy.tistory.com/manage/newpost/4?type=post&amp;returnURL=https%3A%2F%2Ftristy.tistory.com%2F4">
-<div class="og-image" style="background-image: url();">&nbsp;</div>
-<div class="og-text">
-<p class="og-title">https://tristy.tistory.com/manage/newpost/4?type=post&amp;returnURL=https%3A%2F%2Ftristy.tistory.com%2F4</p>
-<p class="og-desc">&nbsp;</p>
-<p class="og-host">tristy.tistory.com</p>
+[트리스티 코딩 노트](https://tristy.tistory.com/4)
 
 
 <p>&nbsp;</p>
