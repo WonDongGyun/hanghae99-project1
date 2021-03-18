@@ -9,6 +9,18 @@
 <p><b>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;ㄴ Jinja2 템플릿 엔진을 이용한 서버사이드 렌더링</b><b></b></p>
 <p>&nbsp;</p>
 <hr contenteditable="false" data-ke-type="horizontalRule" data-ke-style="style7" />
+
+
+<hr contenteditable="false" data-ke-type="horizontalRule" data-ke-style="style7" />
+<p><a href="https://tristy.tistory.com/manage/newpost/4?type=post&amp;returnURL=https%3A%2F%2Ftristy.tistory.com%2F4" target="_blank" rel="noopener">https://tristy.tistory.com/manage/newpost/4?type=post&amp;returnURL=https%3A%2F%2Ftristy.tistory.com%2F4</a></p>
+<figure id="og_1616051456848" contenteditable="false" data-ke-type="opengraph" data-og-type="website" data-og-title="https://tristy.tistory.com/manage/newpost/4?type=post&amp;returnURL=https%3A%2F%2Ftristy.tistory.com%2F4" data-og-description="" data-og-host="tristy.tistory.com" data-og-source-url="https://tristy.tistory.com/manage/newpost/4?type=post&amp;returnURL=https%3A%2F%2Ftristy.tistory.com%2F4" data-og-url="https://tristy.tistory.com/manage/newpost/4?type=post&amp;returnURL=https%3A%2F%2Ftristy.tistory.com%2F4" data-og-image=""><a href="https://tristy.tistory.com/manage/newpost/4?type=post&amp;returnURL=https%3A%2F%2Ftristy.tistory.com%2F4" target="_blank" rel="noopener" data-source-url="https://tristy.tistory.com/manage/newpost/4?type=post&amp;returnURL=https%3A%2F%2Ftristy.tistory.com%2F4">
+<div class="og-image" style="background-image: url();">&nbsp;</div>
+<div class="og-text">
+<p class="og-title">https://tristy.tistory.com/manage/newpost/4?type=post&amp;returnURL=https%3A%2F%2Ftristy.tistory.com%2F4</p>
+<p class="og-desc">&nbsp;</p>
+<p class="og-host">tristy.tistory.com</p>
+
+
 <p>&nbsp;</p>
 <h2 data-ke-size="size26"><span style="background-color: #c0d1e7;"><b>😀 배운점</b></span></h2>
 <p><b>flask로 서버를 만들고 pymongo로 데이터베이스를 만들어서 웹사이트를 만드는게 처음이라서 걱정이 많았는데, 생각보다 훨씬 더 잘 만들어져서 기분이 좋습니다. 서버 사이드 렌더링이 뭔지 정확하게 감이 안잡힌 상태로 기능을 만들었다가, 막판에 jinja를 사용해서 서버 사이드 렌더링 작업을 한 것, blueprint와 jinja import를 사용해서 열심히 파일 구조 만들고 파일 정리한 것, css 애니메이션 효과를 어떻게 쉽게 줄 수 있을까 고민하던 차에 찾아낸 animate.css 등....</b></p>
