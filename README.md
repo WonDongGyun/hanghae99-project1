@@ -10,7 +10,7 @@
 <p>&nbsp;</p>
 <hr contenteditable="false" data-ke-type="horizontalRule" data-ke-style="style7" />
 
-어떤 작업을 했는지는 해당 블로그에 더 자세히 설명되어 있습니다.
+어떤 작업을 했는지는 해당 블로그에 더 자세히 설명되어 있습니다.  
 [트리스티 코딩 노트](https://tristy.tistory.com/4)
 
 
