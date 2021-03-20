@@ -1,5 +1,10 @@
 # hanghae99-project1
 
+[**[트리스티의 flask project[초급]에 오신 여러분을 환영합니다!]**](https://tristy.tistory.com/)  
+  
+  
+프로젝트 개요
+-------------  
 <ul style="list-style-type: disc;" data-ke-list-type="disc">
 <li><b>진행 날짜 - 2021.03.01 ~ 2021.03.04</b></li>
 <li><b>목적 - 처음으로 배정된 팀원들과, 사전과제에서 공부한 지식을 바탕으로 프로젝트를 완성하기</b></li>
@@ -8,12 +13,38 @@
 <p><b>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;ㄴ <span style="color: #333333;">쿠키/세션 방식으로 로그인을 구현하고 &rarr; JWT 인증 방식으로 바꿔보기</span></b></p>
 <p><b>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;ㄴ Jinja2 템플릿 엔진을 이용한 서버사이드 렌더링</b><b></b></p>
 <p>&nbsp;</p>
-<hr contenteditable="false" data-ke-type="horizontalRule" data-ke-style="style7" />
+<hr contenteditable="false" data-ke-type="horizontalRule" data-ke-style="style7" />  
+  
+  
+  
+사용한 패키지
+-------------  
+- beautifulsoup4  
+  > HTML과 XML문서를 파싱하기위한 파이썬 패키지 
+- requests  
+  > HTTP 요청을 간단하고 인간 친화적으로 만드는 파이썬 패키지
+- pymongo  
+  > 비관계형 데이터베이스인 MongoDB를 파이썬에서 사용할 수 있게 해주는 패키지
+- Flask  
+  > 웹 어플리케이션 개발을 위한 웹 프레임워크인 Flask를 사용할 수 있게 해주는 패키지
+- Flask-JWT-Extended  
+  > Flask에서 Jwt 인증방식을 사용할 수 있게 해주는 패키지
+  
+  
+  
+사용한 기술
+-------------
+1. BluePrint
+2. jinja
+3. jwt
+4. ssr
+5. animate CSS
 
-어떤 작업을 했는지는 해당 블로그에 더 자세히 설명되어 있습니다.  
-[트리스티 코딩 노트](https://tristy.tistory.com/4)
 
 
+
+프로젝트 소감
+-------------
 <p>&nbsp;</p>
 <h2 data-ke-size="size26"><span style="background-color: #c0d1e7;"><b>😀 배운점</b></span></h2>
 <p><b>flask로 서버를 만들고 pymongo로 데이터베이스를 만들어서 웹사이트를 만드는게 처음이라서 걱정이 많았는데, 생각보다 훨씬 더 잘 만들어져서 기분이 좋습니다. 서버 사이드 렌더링이 뭔지 정확하게 감이 안잡힌 상태로 기능을 만들었다가, 막판에 jinja를 사용해서 서버 사이드 렌더링 작업을 한 것, blueprint와 jinja import를 사용해서 열심히 파일 구조 만들고 파일 정리한 것, css 애니메이션 효과를 어떻게 쉽게 줄 수 있을까 고민하던 차에 찾아낸 animate.css 등....</b></p>
