@@ -15,7 +15,10 @@
 <p>&nbsp;</p>
 <hr contenteditable="false" data-ke-type="horizontalRule" data-ke-style="style7" />  
   
-  
+
+<br/>
+<br/>
+
   
 사용한 패키지
 -------------  
@@ -30,7 +33,10 @@
 - Flask-JWT-Extended  
   > Flask에서 Jwt 인증방식을 사용할 수 있게 해주는 패키지
   
-  
+
+<br/>
+<br/>
+
   
 사용한 기술
 -------------
@@ -39,6 +45,154 @@
 3. jwt
 4. ssr
 5. animate CSS
+
+
+<br/>
+<br/>
+
+
+
+BluePrint
+-------------
+
+<br/>
+
+블루 프린트는 다음과 같은 장점이 있습니다.
+
+- 어플리케이션을 블루프린트의 집합으로 고려합니다. 따라서 어플리케이션 객체를 인스턴스화 하고, 브루프린트의 묶음으로 만들 수 있습니다.  
+- URL과 서브도메인의 파라미터 또한 블루프린트의 공통 뷰 인자가 됩니다.  
+- 블루프린트를 사용해 다양한 유틸리티를 제공합니다. 어플리케이션과 뷰 함수를 구현하지 않아도 됩니다.  
+
+<br/>
+
+쉽게 말하면, 하나의 .py 파일에 모든 api를 만들기에는 코드가 너무 복잡해집니다.  
+따라서 블루프린트라는 기능을 사용해서 경로를 묶고, 코드를 분리해서 좀 더 편리한 작업 환경을 만들 수 있습니다.  
+
+<p align="center"> <img src=https://user-images.githubusercontent.com/52685665/112305146-b3fa7d00-8ce1-11eb-9b29-db8c5566b153.png> </p>
+
+<br/>
+
+예를 들어, 위 그림에서 login, register, write, main, mypage 기능을 담당하는 api들을 블루프린터를 사용해 분리하였습니다.  
+이처럼 파일 구조를 잡아두면, 협업을 할 때 편하게 작업 구역을 나눌 수 있습니다.  
+
+<br/>
+
+만약, templates/login 에 존재하는 login.py의 기능을 사용하고 싶다면, 밑의 코드처럼 이미 선언된 블루프린터를 가져오면 됩니다.  
+
+<br/>
+
+``` python
+from templates.login.login import login_blueprint
+app.register_blueprint(login_blueprint)
+```
+
+<br/>
+
+login.py에서 블루프린터로 설정해서, 다른 파일에서 참조하게 만들려면 밑의 코드처럼 선언해주시면 됩니다.  
+
+<br/>
+
+``` python
+from flask import Flask, Blueprint
+login_blueprint = Blueprint('login', __name__)
+
+@login_blueprint.route('/login', methods=['POST'])
+```
+
+<br/>
+
+<p align="center"> <img src=https://user-images.githubusercontent.com/52685665/112305989-a98cb300-8ce2-11eb-872c-3866b05f85e0.png> </p>
+
+<br/>
+<br/>
+
+
+Jinja && SSR  && include
+-------------
+
+<br/>
+
+SSR(Server Side Rendering)
+
+<br/>
+
+``` bash
+완성된 페이지의 형태로 응답되기 때문에 검색엔진에 최적화되어 있습니다.  
+전통적인 웹 어플리케이션의 경우 SSR 방식을 사용합니다.  
+
+클라이언트 사이드 랜더링의 경우 서버는 Json 파일만 보내고 자바 스크립트가 Html을 그리는 역할을 담당하기에 초기 구동속도가 느립니다.  
+SSR을 사용하면 첫 랜더링된 Html 파일을 클라이언트에게 전달해주기 때문에 초기 로딩 속도를 많이 줄일 수 있습니다.
+```  
+
+<br/>
+
+Jinja는 Python 프로그래밍 언어를 위한 웹 템플릿 엔진입니다. Jinja에서 이런 SSR 방식의 기능을 구현할 수 있습니다.  
+밑의 코드는 이 프로젝트에서 main 화면의 Card를 jinja SSR 방식을 사용해서 만든 코드입니다.  
+{% 구문을 사용해서 html 파일에서 python을 사용할 수 있습니다.  
+
+<br/>
+
+<p align="center"> <img src=https://user-images.githubusercontent.com/52685665/112314065-ed37ea80-8ceb-11eb-8f03-29b23781b183.png> </p>
+
+<br/>
+
+Jinja에서는 include와 extends를 지원합니다.  
+이 프로젝트는 include 기능을 활용하여 만들어 졌습니다.  
+  
+include 혹은 extends를 활용하면, html에서 공통적인 부분만 따로 분리하여 다른 html로 만들고 가져다 사용할 수 있습니다.  
+예를 들어, main.html에서 상단 부분에 include를 선언해 사진과 같은 엄청난 양의 html 코드를 가져다 사용했습니다.  
+
+<br/>
+
+``` python
+{% include './common/head.html' %}
+``` 
+
+<br/>
+
+<p align="center"> <img src=https://user-images.githubusercontent.com/52685665/112315131-2755bc00-8ced-11eb-832b-61ccd52c1039.png> </p>
+
+<br/>
+<br/>
+
+animate.css
+-------------
+
+<br/>
+
+시간은 얼마 안남았는데, 쉽고 빠르게 애니메이션 CSS를 적용하려면 어떻게 해야할까요?  
+그런 사람들을 위해 animate.css가 있습니다!!  
+
+<br/>
+
+[공식 홈페이지](https://animate.style/)
+
+<br/>
+<br/>
+
+jwt
+-------------
+
+<br/>
+
+JWT(Json Web Tokens)는 서버가 session을 저장하고 관리할 필요가 없이, client에게 token을 발급하고 clien가 준 token이  
+맞는지만 확인합니다. 맞다면 권한을 할당해줍니다.  
+  
+사용자 인증에 필요한 모든 정보는 토큰 자체에 포함하기 때문에 별도의 인증 저장소가 필요없습니다.  
+  
+또한 토큰을 기반으로 하는 다른 인증 시스템에도 접근 가능합니다. 예를 들어 google, facebook 등이 있습니다.  
+token 기반이기 때문에 secret key를 통해 token을 hash 암호화 하여 몇 분 마다 새로 바꾸도록 코딩하는 것이 좋습니다.  
+  
+이 프로젝트에서는 flask_jwt_extended를 활용한 간단한 jwt 로그인 방식을 사용하였습니다.  
+
+<br/>
+
+<p align="center"> <img src=https://user-images.githubusercontent.com/52685665/112317048-07bf9300-8cef-11eb-8cea-85d7b37dce1d.png> </p>
+
+<br/>
+<br/>
+
+
 
 
 
