@@ -1,6 +1,6 @@
 # hanghae99-project1
 
-[**[트리스티의 flask project[초급]에 오신 여러분을 환영합니다!]**](https://tristy.tistory.com/)  
+[**[GameTree에 오신 여러분을 환영합니다!]**](https://tristy.tistory.com/)  
   
   
 프로젝트 개요
